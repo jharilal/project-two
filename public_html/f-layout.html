@@ -5,15 +5,93 @@
     <title>Internet History</title>
     <meta name="description" content="This website is representative of the F and Z layouts">
     <style>
-
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lavender;
+        }
+        #icon{
+            padding-left: 20px;
+            padding-right: 10px;
+            width: 80px;
+            float: left;
+            color: navy;
+        }
+        #primary_links {
+            float: right;
+            font-size: 30px;
+            line-height: 80px;
+        }
+        h1 {
+            margin-top: 0px;
+            float: left;
+            line-height: 80px;
+        }
+        .banner{
+            padding-top: 20px;
+            margin-top: 0px;
+            margin-bottom: 8px;
+            height: 80px;
+            background-color: lavender;
+        }
+        #clear_banner{
+            height: 100px;
+            background-color: lavender;
+        }
+        .article{
+            height: 160px;
+            width: 892px;
+            margin: 20px;
+            border: navy solid 2px;
+            padding: 10px;
+            float: none;
+        }
+        .headline_image{
+            height: 160px;
+            width: 160px;
+            float: left;
+        }
+        .headline_text{
+            width: 710px;
+            padding: 10px;
+            padding-top: 20px;
+            margin-bottom: 0px;
+            line-height: 40px;
+        }
+        .article_content{
+            float: left;
+            margin: 0px;
+            width: 710px;
+            padding-left: 10px;
+        }
+        #footer{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-<menu>
-    <a href="index.html">Z-layout</a>
-    <a href="f-layout.html">F-layout</a>
-</menu>
-<p>This page introduces the z-layout and the f-layout for a webpage </p>
-
+<div id="wrapper">
+    <div class="banner" id="icon">
+        <img src="images/wifi-solid.svg" alt="wifi icon, full bars">
+    </div>
+    <h1 class="banner">Internet History F/Z Layouts</h1>
+    <menu class="banner" id="primary_links">
+        <a href="index.html">Z-layout</a>
+        <a href="f-layout.html">F-layout</a>
+    </menu>
+    <div id="clear_banner"></div>
+    <div class="article">
+        <img class="headline_image" src="images/latin_stone.jpeg" alt="Some latin writing on a stone">
+        <h1 class="headline_text">Nam porttitor interdum augue</h1>
+        <p class="article_content">Cras leo ligula, gravida sed venenatis ut, tempus id mauris. Nam eu turpis condimentum orci laoreet accumsan. Curabitur scelerisque ac lacus eu vehicula. Proin et dolor imperdiet, scelerisque nunc eget, vestibulum lectus. Maecenas tempor justo tortor, a lobortis magna pulvinar at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+    </div>
+    <div class="article">
+        <img class="headline_image" src="images/earth_space.jpeg" alt="Earth in space with a dark background">
+        <h1 class="headline_text">Maecenas non arcu tristique</h1>
+        <p class="article_content">Nulla tristique purus in fermentum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas, magna ut egestas elementum, orci metus accumsan felis, non dapibus metus tortor in nisl. Nam venenatis lacus id iaculis porttitor. </p>
+    </div>
+    <footer id="footer">&copy; Jordan Harilal 2021</footer>
+</div>
 </body>
 </html>
