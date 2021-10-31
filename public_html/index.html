@@ -11,13 +11,24 @@
 			margin-right: auto;
 			background-color: lavender;
 		}
-		#hero {
-
+		#hero-image {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/computer-desk.jpg");
 			width: 100%;
 			object-fit: cover;
 			padding-left: 0;
 			padding-right: 0;
 			height: 400px;
+			float: left;
+		}
+		#hero-text{
+			font-family: Helvetica;
+			line-height: 20px;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
 		}
 		#icon{
 			padding-left: 20px;
@@ -58,7 +69,9 @@
 			background-color: lavender;
 		}
 		#footer{
-			margin-top: 40px;
+			float: none;
+			width: 100%;
+			margin-top: 550px;
 			padding-bottom: 10px;
 			text-align: center;
 		}
@@ -78,7 +91,12 @@
 		<a href="latenines.html">Late 90s</a>
 		<a href="earlytwos.html">Early 00s</a>
 	</menu>
-	<img id="hero" src="images/computer-desk.jpg" alt="A web of items connected to a cloud">
+	<div id="hero-image">
+		<div id="hero-text">
+			<h1>Ground your roots.</h1>
+			<h1>Grow your career.</h1>
+		</div>
+	</div>
 	<div id="sub-background">
 	<div class="sub-block">
 		<p>Post World War II, the communication systems of the United States were still in the age of manually connecting telephones to create a circuit from one phone to another. Given the time period, there was threat of a singular, well-placed attack wiping out the entire communication systems for the whole country. This issue, together with the technological race against the Soviet Union spurred a creation of a network that would forever change the path and development of humanity. These circumstances pushed for innovation of the government project, the ARPAnet, which would later through many modifications to become the internet we know today.</p>
