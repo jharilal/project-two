@@ -1,3 +1,3 @@
 ## Project-one Internet History
 
-fandzpages.eastus.azurecontainer.io
+project-one-harilal.eastus.azurecontainer.io
