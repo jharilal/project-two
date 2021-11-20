@@ -22,7 +22,7 @@
             float: right;
             font-size: 19px;
             line-height: 90px;
-            padding-right: 10px;
+            padding-right: 20px;
         }
         h1 {
             margin-top: 0px;
@@ -98,13 +98,13 @@
         <img src="images/code-break.svg" alt="arrows with a slash in the middle">
     </div>
     <h1 class="banner" id="internet_title">OOP</h1>
-    <menu class="banner" id="primary_links">
+    <div class="banner" id="primary_links">
         <a href="oop_dash.html">OOP Home</a>
-        <a href="oop_glossary.html">OOP Glossary</a>
+        <a href="oop_glossary.html">Pylint and Glossary</a>
         <a href="oop_aaa_testing.html">AAA Testing</a>
-        <a href="principles_of_oop.html">Principles of OOP</a>
-        <a href="SOLID.html">SOLID</a>
-    </menu>
+        <a href="oop_principles_of_oop.html">Principles of OOP</a>
+        <a href="oop_solid.html">SOLID</a>
+    </div>
     <div id="clear_banner"></div>
     <div class="article">
         <h1 class="headline_text">Pylint</h1>
@@ -133,7 +133,7 @@
             <p>To run pylint, it is very simple. Simply follow the format below, and it will return a report for your python file!</p>
             <p class="code_text">pylint your-python-file-here.py</p>
             <hr>
-            <p>Here is an example of a pylint report. In the code below, we can see that I commented out the doctring of
+            <p>Here is an example of a pylint report. In the code below, we can see that I commented out the docstring of
             the function, which is not up to PEP8 standards. We can also see that there is a pylint comment under that which
             tells pylint not to report the following "errors".</p>
             <img class="article_img" src="images/pylint-error-code.png" alt="some code that will cause a pylint error">
