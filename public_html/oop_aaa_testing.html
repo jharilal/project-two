@@ -85,13 +85,20 @@
         .article_img{
             width: 100%;
         }
-
+        .subheadline{
+            float: none;
+            line-height: 35px;
+            margin-bottom: 0px;
+            font-family: Helvetica;
+            font-size: 25px;
+            padding-bottom: 0px;
+        }
     </style>
 </head>
 <body>
 <div id="wrapper">
     <div class="banner" id="icon">
-        <img src="images/code-break.svg" alt="arrows with a slash in the middle">
+        <img src="images/OOP/code-break.svg" alt="arrows with a slash in the middle">
     </div>
     <h1 class="banner" id="internet_title">OOP</h1>
     <div class="banner" id="primary_links">
@@ -123,17 +130,22 @@
              and tests it against the expected outcome</p>
             <hr>
             <p>Refer to this picture below to see how it's done!</p>
-            <img class="article_img" src="images/addition_method.png" alt="The addition method from the calculator">
+            <img class="article_img" src="images/OOP/addition_method.png" alt="The addition method from the calculator">
             <p>This addition function adds a tuple of numbers and stores it to the history. This is the <i>facade</i> of
             the calculator so the actual calculation, the object creation, and storing the value in the history is hidden
             behind the scenes. But regardless, this function is supposed to return the sum of the values. Below is the
             AAA style unit test for the addition function.</p>
-            <img class="article_img" src="images/aaa_test.png" alt="The AAA test for the addition method">
+            <img class="article_img" src="images/OOP/aaa_test.png" alt="The AAA test for the addition method">
             <p>As we can see, all the steps come together to form one cohesive test. The first line where the tuple is created
                 would be the <i>Arrange</i> step where data is being set up to perform the test. The second step is <i>Act</i>
             where the main action is performed. The addition function is called and the <i>result</i> variable is set to
             the result of the method. Finally in the last step, the <i>Assertion</i> is made where we know the expected result,
             and we are making sure that the method returns the expected result. In this case, 3 + 4 + 5 = 12.<p>
+            <hr>
+            <h1 class="subheadline">Testing Using external Data</h1>
+            <p>An important aspect to testing your code is making sure that it is suitable to handle copious amounts of data
+            when it scales up. In this example, we use pandas to supply csv files containing data that will test each of
+            the operations.</p>
         </div>
     </div>
     <footer id="footer">&copy; Jordan Harilal 2021</footer>
