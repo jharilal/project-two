@@ -47,7 +47,7 @@
             background-color: peachpuff;
         }
         .article{
-            height: 1050px;
+            height: 3000px;
             width: 892px;
             margin: 20px;
             border: cornflowerblue solid 2px;
@@ -70,7 +70,7 @@
             padding-left: 10px;
         }
         #footer{
-            margin-top: 40px;
+            margin-top: 20px;
             padding-bottom: 10px;
             text-align: center;
         }
@@ -85,6 +85,13 @@
         .article_img{
             width: 100%;
         }
+        #csv_table{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 269px;
+            height: 369px;
+        }
         .subheadline{
             float: none;
             line-height: 35px;
@@ -92,6 +99,11 @@
             font-family: Helvetica;
             font-size: 25px;
             padding-bottom: 0px;
+        }
+        #github_link{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
         }
     </style>
 </head>
@@ -145,7 +157,32 @@
             <h1 class="subheadline">Testing Using external Data</h1>
             <p>An important aspect to testing your code is making sure that it is suitable to handle copious amounts of data
             when it scales up. In this example, we use pandas to supply csv files containing data that will test each of
-            the operations.</p>
+            the operations. To demonstrate how to accomplish this, I will be using the pandas python package, and demonstrate
+            how to test with csvs using the "test_subtracting method"</p>
+            <hr>
+            <p>First, we need to set up our csv files. Below, we can see that I have used Excel to create 4 columns containing
+            three different values, and a result column containing the difference of the values. Once we have this sheet,
+            we can put it into our project folder.</p>
+            <img id="csv_table" src="images/OOP/subtracting_csv.png" alt="a csv of values and their differences">
+            <p>Once we have our csv prepared, we can start writing our method to create a pandas dataframe. Here, I've made
+            a class called "CsvRead" that specifically holds the task  to read a csv files, and it takes a filepath as an input.
+            The pandas module has a method called "read_csv" which makes this task easy to accomplish.</p>
+            <img class="article_img" src="images/OOP/read_csv_method.png" alt="the read csv method of csvread">
+            <p>Below, I'm testing this method and making sure that it prints out the data frame we expected. For this,
+            I want to assure that I can access the values within the dataframe, so I print out the 'value_a' item from
+            each row. This is not a formal test where we assert against a value, but a test to make sure that we can
+            visually see what is being printed out</p>
+            <p><i>Note: Use pytest -s to allow print statements to  print out their expected expressions</i></p>
+            <img class="article_img" src="images/OOP/read_csv_test.png" alt="test for readcsv function">
+            <p>Now we are ready to apply this method! I import the class into the calculator_test.py file
+            set up the test_subtracting function in a way so that we can read the csv file. We use panda methods to
+            iterate through the rows and create our tuple fro the values of the csv, and then assert it against the result
+            column of the csv.</p>
+            <img class="article_img" src="images/OOP/test_sub_method.png" alt="pytest result for test_subtracting">
+            <p>And just like that, we have a fully functional test utilizing external data!</p>
+            <img class="article_img" src="images/OOP/subtracting_pytest.png" alt="pytest for subtracting">
+            <hr>
+            <p id="github_link">You can follow along on <a href=https://github.com/jharilal/calculator_assignment/tree/Article_Two">GitHub!</a></p>
         </div>
     </div>
     <footer id="footer">&copy; Jordan Harilal 2021</footer>
